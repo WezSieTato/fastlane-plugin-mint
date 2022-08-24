@@ -11,7 +11,17 @@ module Fastlane
       end
 
       def self.description
-        "Prints the full path to the installed executable"
+        "Print and return the full path to the installed executable"
+      end
+
+      def self.example_code
+        [
+          '
+          executable_path = mint_which(package: "swiftlint")
+          swiftlint(executable: executable_path)
+          ',
+          'mint_which(package: sourcery)'
+        ]
       end
 
       def self.authors

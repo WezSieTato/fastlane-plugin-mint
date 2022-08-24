@@ -17,6 +17,13 @@ module Fastlane
         "Installs all the packages in a Mintfile"
       end
 
+      def self.example_code
+        [
+          'mint_bootstrap',
+          'mint_bootstrap(link: true)'
+        ]
+      end
+
       def self.authors
         ["Marcin Stepnowski"]
       end
