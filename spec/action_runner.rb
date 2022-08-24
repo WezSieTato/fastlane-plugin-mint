@@ -7,6 +7,10 @@ module ActionRunner
     run_action("mint_which", string_params)
   end
 
+  def self.install_mint
+    run_action("install_mint", "")
+  end
+
   def self.run_action(name, string_params)
     Fastlane::FastFile.new.parse("
       lane :test do
