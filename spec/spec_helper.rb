@@ -4,11 +4,16 @@ require 'simplecov'
 
 SimpleCov.start
 
+if ENV['CI'] == 'true'
+  require 'codecov'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+end
+
 module SpecHelper
 end
 
-require 'fastlane' # to import the Action super class
-require 'fastlane/plugin/mint' # import the actual plugin
+require 'fastlane'
+require 'fastlane/plugin/mint'
 require 'action_runner'
 
-Fastlane.load_actions # load other actions (in case your plugin calls other actions or shared values)
+Fastlane.load_actions

@@ -32,7 +32,10 @@ module Fastlane
         [
           FastlaneCore::ConfigItem.new(key: :package,
                                   env_name: "MINT_BOOTSTRAP_PACKAGE",
-                               description: 'The package can be a shorthand for a github repo "githubName/repo", or a fully qualified .git path. An optional version can be specified by appending @version to the repo, otherwise the newest tag will be used (or master if no tags are found.)',
+                               description:
+'The package can be a shorthand for a github repo "githubName/repo", or a fully qualified .git path.
+ An optional version can be specified by appending @version to the repo, otherwise the newest tag
+ will be used (or master if no tags are found.)',
                                   optional: false,
                                       type: String)
         ]
