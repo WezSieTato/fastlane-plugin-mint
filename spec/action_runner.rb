@@ -3,6 +3,10 @@ module ActionRunner
     run_action("mint_bootstrap", string_params)
   end
 
+  def self.which(string_params)
+    run_action("mint_which", string_params)
+  end
+
   def self.run_action(name, string_params)
     Fastlane::FastFile.new.parse("
       lane :test do

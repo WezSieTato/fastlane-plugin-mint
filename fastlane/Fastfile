@@ -1,3 +1,5 @@
 lane :test do
-  mint
+  mint_bootstrap
+  executable = mint_which(package: "swiftlint")
+  swiftlint(executable: executable, path: "example.swift")
 end
