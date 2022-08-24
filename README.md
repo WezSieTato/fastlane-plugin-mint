@@ -1,6 +1,7 @@
 # mint plugin
 
 [![fastlane Plugin Badge](https://rawcdn.githack.com/fastlane/fastlane/master/fastlane/assets/plugin-badge.svg)](https://rubygems.org/gems/fastlane-plugin-mint)
+[![codecov](https://codecov.io/gh/WezSieTato/fastlane-plugin-mint/branch/master/graph/badge.svg)](https://codecov.io/gh/WezSieTato/fastlane-plugin-mint)
 
 ## Getting Started
 
