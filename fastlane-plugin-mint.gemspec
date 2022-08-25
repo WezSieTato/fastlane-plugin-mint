@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency('rake')
   spec.add_development_dependency('rspec')
   spec.add_development_dependency('rspec_junit_formatter')
-  spec.add_development_dependency('rubocop', '1.12.1')
+  spec.add_development_dependency('rubocop', '1.35.1')
   spec.add_development_dependency('rubocop-performance')
   spec.add_development_dependency('rubocop-require_tools')
   spec.add_development_dependency('simplecov')
