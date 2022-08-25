@@ -31,10 +31,10 @@ module Fastlane
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :link,
-                                  env_name: "MINT_BOOTSTRAP_LINK",
-                               description: "Install the packages of the Mintfile globally",
-                                  optional: true,
-                                      type: Boolean)
+                                       env_name: "MINT_BOOTSTRAP_LINK",
+                                       description: "Install the packages of the Mintfile globally",
+                                       optional: true,
+                                       type: Boolean)
         ]
       end
 
