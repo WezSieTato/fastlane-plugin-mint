@@ -20,7 +20,7 @@ module Fastlane
           executable_path = mint_which(package: "swiftlint")
           swiftlint(executable: executable_path)
           ',
-          'mint_which(package: sourcery)'
+          'mint_which(package: "sourcery")'
         ]
       end
 
@@ -31,7 +31,7 @@ module Fastlane
       def self.available_options
         [
           FastlaneCore::ConfigItem.new(key: :package,
-                                       env_name: "MINT_BOOTSTRAP_PACKAGE",
+                                       env_name: "MINT_WHICH_PACKAGE",
                                        description:
         'The package can be a shorthand for a github repo "githubName/repo", or a fully qualified .git path.
  An optional version can be specified by appending @version to the repo, otherwise the newest tag
