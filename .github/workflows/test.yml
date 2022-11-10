@@ -22,6 +22,8 @@ jobs:
       run: bundle check || bundle install --jobs=4 --retry=3 --path vendor/bundle
     - name: Run tests
       run: bundle exec rake
+    - name: Codecov
+      uses: codecov/codecov-action@v3
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
