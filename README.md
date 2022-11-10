@@ -15,11 +15,13 @@ fastlane add_plugin mint
 
 Run [Mint](https://github.com/yonaskolb/Mint) with fastlane! Mint is a package manager that installs and runs Swift command line tool packages.
 
-Available action in this plugin:
+Available actions in this plugin:
  
  * __install_mint__ - Call homebrew to install mint
  * __mint_bootstrap__ - Installs all the packages in your [Mintfile](https://github.com/yonaskolb/Mint#mintfile), by default, without linking them globally
  * __mint_which__ - Return the path to an installed package executable
+  * __mint_run__ - Run the command with mint, it will install package if needed
+
 ## Example
 
 Check out the [example `Fastfile`](fastlane/Fastfile) to see how to use this plugin. Try it by cloning the repo, running `fastlane install_plugins` and `bundle exec fastlane test`.
