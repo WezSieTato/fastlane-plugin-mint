@@ -4,10 +4,7 @@ module Fastlane
   module Actions
     class MintRunAction < Action
       def self.run(params)
-        require 'shellwords'
-
-        cmd = ["mint", "run", params[:command]]
-        Actions.sh(Shellwords.join(cmd))
+        Actions.sh("mint run #{params[:command]}")
       end
 
       def self.description

@@ -7,6 +7,10 @@ module ActionRunner
     run_action("mint_which", string_params)
   end
 
+  def self.run(string_params)
+    run_action("mint_run", string_params)
+  end
+
   def self.install_mint
     run_action("install_mint", "")
   end
